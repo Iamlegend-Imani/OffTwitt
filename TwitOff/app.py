@@ -60,8 +60,11 @@ def create_app():
 
     @app.route('/populate')
     def populate():
-        add_or_update_user("elonmusk")
-        add_or_update_user("jackblack")
+        add_or_update_user("garyvee")
+        add_or_update_user("svpino")
+        add_or_update_user("consciousmuscle")
+        add_or_update_user("TomBilyeu")
+        add_or_update_user("FitFounder")
         return render_template("base.html", title="Home", users=User.query.all())
 
     @app.route('/reset')
